@@ -1,0 +1,113 @@
+.waiter-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &--inactive {
+    opacity: 0.7;
+    background-color: #f8f9fa;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+
+  &__status {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    &--active {
+      background-color: #e6f4ea;
+      color: #1e7e34;
+    }
+
+    &--inactive {
+      background-color: #f8d7da;
+      color: #dc3545;
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+
+  &__label {
+    font-weight: 500;
+    color: #666;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+  }
+
+  &__button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+    &--edit {
+      background-color: #f0f0f0;
+      color: #333;
+      
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+    
+    &--activate {
+      background-color: #28a745;
+      color: white;
+      
+      &:hover {
+        background-color: #218838;
+      }
+    }
+    
+    &--deactivate {
+      background-color: #dc3545;
+      color: white;
+      
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+}
