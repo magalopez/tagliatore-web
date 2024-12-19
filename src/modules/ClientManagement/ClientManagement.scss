@@ -1,0 +1,32 @@
+.client-management {
+  padding: 2rem;
+
+  &__header {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  &__add-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #0052a3;
+    }
+  }
+}
