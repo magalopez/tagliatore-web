@@ -1,0 +1,80 @@
+.category-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &--inactive {
+    opacity: 0.7;
+  }
+
+  &__content {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+
+  &__description {
+    color: #666;
+    margin: 0 0 1rem 0;
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    &--active {
+      background-color: #e6f4ea;
+      color: #1e7e34;
+    }
+
+    &--inactive {
+      background-color: #f8d7da;
+      color: #dc3545;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    
+    &--edit {
+      background-color: #f0f0f0;
+      color: #333;
+      
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+    
+    &--delete {
+      background-color: #ff4444;
+      color: white;
+      
+      &:hover {
+        background-color: #cc0000;
+      }
+    }
+  }
+}
