@@ -1,0 +1,43 @@
+.chat-system {
+  padding: 2rem;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    margin-bottom: 2rem;
+
+    h1 {
+      margin: 0;
+      color: #333;
+    }
+  }
+
+  &__container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    height: calc(100vh - 8rem);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-system {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .chat-list {
+    display: none;
+
+    &--active {
+      display: flex;
+    }
+  }
+}
