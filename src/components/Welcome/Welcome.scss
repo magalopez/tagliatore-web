@@ -1,0 +1,73 @@
+// src/components/Welcome/Welcome.scss
+.welcome {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  &__description {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  &__features {
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      padding: 0.75rem;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      color: #333;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "•";
+        color: #0066cc;
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__user-info {
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    color: #666;
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    strong {
+      color: #333;
+    }
+  }
+}
